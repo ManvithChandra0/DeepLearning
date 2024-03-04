@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TensorFlow Area Calculator</title>
+</head>
+<body>
+<center>
+    <h1>TensorFlow Area Calculator</h1>
+
+    <h2>Triangle Area</h2>
+    <form action="/calculate_triangle" method="post">
+        <label for="sideA">Side A:</label>
+        <input type="number" name="sideA" required>
+<br>
+        <label for="sideB">Side B:</label>
+        <input type="number" name="sideB" required>
+<br>
+        <label for="sideC">Side C:</label>
+        <input type="number" name="sideC" required>
+<br>
+        <button type="submit">Calculate Triangle Area</button>
+    </form>
+    {% if triangle_result %}
+        <p>Triangle Area: {{ triangle_result }}</p>
+    {% endif %}
+
+
+</center>
+</body>
+</html>
