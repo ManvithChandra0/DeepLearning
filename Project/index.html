@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Comparison</title>
+</head>
+<body>
+    <h1>Model Comparison</h1>
+    <h2>Simple ANN Model</h2>
+    <a href="/model/simple_ANN">Compare Simple ANN Models</a><br><br>
+
+    <h2>CNN Model</h2>
+    <a href="/model/cnn_model">Compare CNN Models</a><br><br>
+
+    <h2>CNN with Regularization</h2>
+    <a href="/model/cnn_add_regularize">Compare CNN Models with Regularization</a><br><br>
+
+    <h2>VGG Model</h2>
+    <a href="/model/cnn_vgg">Compare VGG Models</a><br><br>
+
+    {% if model_comparison_graph_url %}
+    <img src="{{ model_comparison_graph_url }}" alt="Model Comparison Graph">
+    {% endif %}
+</body>
+</html>

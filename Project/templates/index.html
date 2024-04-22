@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model Plots</title>
+    <style>
+        .navbar { overflow: hidden; background-color: #333; }
+        .navbar a { float: left; display: block; color: white; text-align: center; padding: 14px 20px; text-decoration: none; }
+        .navbar a:hover { background-color: #ddd; color: black; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        {% for model_name in model_names %}
+            <a href="{{ url_for('plot', model_name=model_name) }}">{{ model_name }}</a>
+        {% endfor %}
+    </div>
+    <h1>Select a Model to View Its Training and Validation Plots</h1>
+</body>
+</html>
